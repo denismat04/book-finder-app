@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Book Finder — Găsește cărți</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Finder — Găsește cărți după titlu, autor sau subiect</h1>
+    </header>
+
+    <main>
+        <form id="search-form" class="search-row" role="search" aria-label="Căutare cărți">
+            <label for="query" class="visually-hidden">Cuvânt cheie</label>
+            <input id="query" name="query" type="search" placeholder="Introdu titlu, autor sau subiect" aria-label="Cuvânt cheie" required />
+            <button type="submit">Caută</button>
+        </form>
+
+        <section id="results" aria-live="polite">
+            <h2>Rezultate</h2>
+            <p id="results-placeholder" class="placeholder">Nicio căutare efectuată. Introdu un cuvânt cheie și apasă "Caută".</p>
+            <ul id="results-list" hidden></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="placeholder" style="margin-top:1rem;">Interfață structurală — funcționalitatea de căutare va fi adăugată ulterior.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
